@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List with Time Frame</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/00c947274b.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
@@ -17,7 +18,7 @@
     320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path></svg> -->
     <div class="containier">
     <div class="row col-12">
-     <span>My To-Do List</span>
+     <span class="mydo">My To-Do List</span>
         <span class="gret" >
         <p id="mygreet"></p>
         </div></span>
@@ -33,18 +34,28 @@
                  <input type="date" id="taskDate" min="2025-01-01" class="form-control">
                  </div>
                  <div class="col-sm-12 col-md-12 col-lg-6 mt-3">
-                 <input type="time" id="startTime"class="form-control" >
+                    <div class="time-input-container">
+                 <input type="time" id="startTime"  class="form-control">
                  </div>
+                 </div>
+
                  <div class="col-sm-12 col-md-12 col-lg-6 mt-3">
-                 <input type="time" id="endTime" class="form-control">
+                     <div class="time-input-container">
+                 <input type="time" id="endTime" class="form-control" >
                  </div>
-                  <div class="col-sm-12 col-md-12 col-lg-6 mt-3">
+                 </div>
+
+                  <div class="col-sm-12 col-md-12 col-lg-12 mt-3 mb-2">
+                    <div class="butin">
                  <button class="add-btn" onclick="addTask()">Add Task</button>
                  </div>
                  </div>
+                 </div>
         </div>
-            </div>
+            </div >
+            <div class="taskli">
                 <ul id="taskList"></ul>
+                </div>
             </div>
     </div>
     </div>
