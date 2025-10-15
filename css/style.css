@@ -140,18 +140,3 @@ span{
       display: inline-block;
       width: 100%;
     }
-
-    .time-input-container input[type="time"] {
-      padding-left: 30px; /* Space for the icon */
-    }
-
-    .time-input-container::before {
-      content: '\1F550'; /* Unicode for clock icon 🕐 */
-      position: absolute;
-      left: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 20px;
-      color: #666;
-      pointer-events: none; /* Ensures icon doesn't interfere with input */
-    }
